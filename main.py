@@ -579,7 +579,7 @@ with gr.Blocks(title="FlexGen - Auto Registers Extraction") as interface:
 
 
 
-interface.launch(share=True, favicon_path="media/cropped-flexgen-icon-32x32.png", server_port=7860)
+interface.launch(share=True, favicon_path="media/cropped-flexgen-icon-32x32.png", server_port=7865)
 
 
 
