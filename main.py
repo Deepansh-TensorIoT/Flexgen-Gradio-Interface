@@ -578,8 +578,8 @@ with gr.Blocks(title="FlexGen - Auto Registers Extraction") as interface:
 
 
 
-
-interface.launch(inbrowser=True, ssl_verify=False, server_name="0.0.0.0", favicon_path="media/cropped-flexgen-icon-32x32.png", server_port=7865,ssl_certfile="./cert.pem",ssl_keyfile="./key.pem")
+interface.launch(inbrowser=True, server_name="0.0.0.0", favicon_path="media/cropped-flexgen-icon-32x32.png", server_port=7865)
+#interface.launch(inbrowser=True, ssl_verify=False, server_name="0.0.0.0", favicon_path="media/cropped-flexgen-icon-32x32.png", server_port=7865,ssl_certfile="./cert.pem",ssl_keyfile="./key.pem")
 
 
 
