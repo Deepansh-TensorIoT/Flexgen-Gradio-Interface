@@ -38,24 +38,21 @@ type_mapping = {
 }
 
 def process_csv(csv_list_):
-    """ Read's the output of the Excel extraction that are stored in csv's and build a list of dataframes """
-    logger.info("Processing CSV...")
+   
+    print("Processing CSV...")
     dfs = []
     i=0
     nrows = 0
     for csv in csv_list_:
-#         print("=====================++++++++++++++++++++============================")
-        logger.info("=====================++++++++++++++++++++============================")
-#         print("Processing csv :", csv)
-        logger.info("Processing csv : %s", csv)
+        print("=====================++++++++++++++++++++============================")
+        print("Processing csv : ", csv)
         
         i=i+1
         try:
             df = pd.read_csv(csv , skiprows = nrows, sep = ',', dtype=str, index_col=False, quoting=2, on_bad_lines='skip', header= 'infer', keep_default_na=False)
 
         except Exception as e:
-#             print("ERROR!!!!!:Could not process csv file ",   e)
-            logger.info("ERROR!!!!!:Could not process csv file %s",  e)
+            print("ERROR!!!!!:Could not process csv file ",   e)
 
         nan_value = float("NaN")
         # Replace '\t' and '\r\n' with empty spaces in column headers
